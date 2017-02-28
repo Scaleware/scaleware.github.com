@@ -4,6 +4,7 @@ const markdown   = require('metalsmith-markdown');
 const sass       = require('metalsmith-sass');
 const serve      = require('metalsmith-serve');
 const watch      = require('metalsmith-watch');
+const copyAssets = require('metalsmith-copy-assets-540');
 
 metalsmith(__dirname)
   .metadata({
@@ -23,6 +24,12 @@ metalsmith(__dirname)
   .use(sass({
     outputStyle: "expanded"
   }))
+  .use(copyAssets(
+    {
+      src: 'node_modules/font-awesome/fonts',
+      dest: 'fonts'
+    }
+   ))
   .use(serve({
     port: 3030,
     verbose: true

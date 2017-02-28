@@ -1,12 +1,39 @@
-<nav class="navigation">
-  <section class="container">
-    <a class="navigation-title" href="https://scaleware.co.uk">
-      <h3>Scaleware</h3>
+<nav class="nav container">
+  <div class="nav-left">
+    <a class="nav-item">
+      <img src="/images/logo300x78.png" alt="Scaleware logo">
     </a>
-    <ul class="navigation-list float-right">
-      <li class="navigation-item">
-        <a class="navigation-link">Blog</a>
-      </li>
-    </ul>
-  </section>
+  </div>
+
+  <div class="nav-center">
+    <a class="nav-item" href="https://github.com/scaleware" target="_blank">
+      <span class="icon">
+        <i class="fa fa-github"></i>
+      </span>
+    </a>
+    <a class="nav-item" href="https://twitter.com/scaleware" target="_blank">
+      <span class="icon">
+        <i class="fa fa-twitter"></i>
+      </span>
+    </a>
+  </div>
+
+  <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+  <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+  <span class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+
+  <!-- This "nav-menu" is hidden on mobile -->
+  <!-- Add the modifier "is-active" to display it on mobile -->
+  <div class="nav-right nav-menu">
+    <a class="nav-item" href="/tech.html">
+      Tech
+    </a>
+    <a class="nav-item" href="/blog.html">
+      Blog
+    </a>
+  </div>
 </nav>
