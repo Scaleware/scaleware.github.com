@@ -15,7 +15,7 @@ metalsmith(__dirname)
   })
   .source('./src')
   .destination('./build')
-  .clean(true)
+  // .clean(true)
   .use(markdown())
   .use(layouts({
     engine: 'handlebars',
